@@ -85,7 +85,9 @@ int main() {
 			day++;
 		}
 
-		std::cout << "\n\n" << std::endl;
+		if(month != 12) {
+			std::cout << "\n\n" << std::endl;
+		}
 		month++;
 	}
 
