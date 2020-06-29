@@ -16,7 +16,7 @@ int main() {
 	x1 = (year - 1) / 4;
 	x2 = (year - 1) / 100;
 	x3 = (year - 1) / 400;
-	firstdaymonth = (year + x1 - x2 + x3) % 7; // this is some unknown black magic
+	firstdaymonth = ((year + x1 - x2 + x3) % 7) - 1; // this is some unknown black magic
 
 
 	// Start to print out the result
@@ -63,7 +63,7 @@ int main() {
 			std::cout << "December" << std::endl;
 		}
 
-		std::cout << " S  M  T  W  T  F  S\n____________________" << std::endl;
+		std::cout << " M  T  W  T  F  S  S\n____________________" << std::endl;
 
 		int day = 1;
 		int i = firstdaymonth;
