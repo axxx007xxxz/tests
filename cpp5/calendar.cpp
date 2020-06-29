@@ -73,7 +73,7 @@ int main() {
 			daysn = 31;
 			monthname = "December";
 		}
-		std::cout << monthname << std::endl;
+		std::cout << "\e[4m" << monthname << "\e[0m" << std::endl;
 
 		std::cout << " M  T  W  T  F  S  S\n____________________" << std::endl;
 
