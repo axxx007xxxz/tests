@@ -26,7 +26,7 @@ int main() {
 
 
 	// Start to print out the result
-	std::cout << "        " << year << std::endl;
+	std::cout << "        " << "\e[1m" << year << "\e[0m" << std::endl;
 
 	// Loop over all months
 	int month = 1;
