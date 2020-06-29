@@ -18,6 +18,12 @@ int main() {
 	x3 = (year - 1) / 400;
 	firstdaymonth = ((year + x1 - x2 + x3) % 7) - 1; // this is some unknown black magic
 
+	// Check if the year is a leap year
+	bool leap;
+	if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+		leap = true;
+	}
+
 
 	// Start to print out the result
 	std::cout << "        " << year << std::endl;
@@ -29,7 +35,11 @@ int main() {
 			daysn = 31;
 			std::cout << "January" << std::endl;
 		} else if(month == 2) {
-			daysn = 28;
+			if(leap == true) {
+				daysn = 29;
+			} else {
+				daysn = 28;
+			}
 			std::cout << "February" << std::endl;
 		} else if(month == 3) {
 			daysn = 31;
