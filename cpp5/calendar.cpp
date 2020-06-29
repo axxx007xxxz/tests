@@ -30,48 +30,50 @@ int main() {
 
 	// Loop over all months
 	int month = 1;
+	std::string monthname;
 	while(month <= 12) {
 		if(month == 1) {
 			daysn = 31;
-			std::cout << "January" << std::endl;
+			monthname = "January";
 		} else if(month == 2) {
 			if(leap == true) {
 				daysn = 29;
 			} else {
 				daysn = 28;
 			}
-			std::cout << "February" << std::endl;
+			monthname = "February";
 		} else if(month == 3) {
 			daysn = 31;
-			std::cout << "March" << std::endl;
+			monthname = "March";
 		} else if(month == 4) {
 			daysn = 30;
-			std::cout << "April" << std::endl;
+			monthname = "April";
 		} else if(month == 5) {
 			daysn = 31;
-			std::cout << "May" << std::endl;
+			monthname = "May";
 		} else if(month == 6) {
 			daysn = 30;
-			std::cout << "June" << std::endl;
+			monthname = "June";
 		} else if(month == 7) {
 			daysn = 31;
-			std::cout << "July" << std::endl;
+			monthname = "July";
 		} else if(month == 8) {
 			daysn = 31;
-			std::cout << "August" << std::endl;
+			monthname = "August";
 		} else if(month == 9) {
 			daysn = 30;
-			std::cout << "Semptember" << std::endl;
+			monthname = "Semptember";
 		} else if(month == 10) {
 			daysn = 31;
-			std::cout << "October" << std::endl;
+			monthname = "October";
 		} else if(month == 11) {
 			daysn = 30;
-			std::cout << "November" << std::endl;
+			monthname = "November";
 		} else if(month == 12) {
 			daysn = 31;
-			std::cout << "December" << std::endl;
+			monthname = "December";
 		}
+		std::cout << monthname << std::endl;
 
 		std::cout << " M  T  W  T  F  S  S\n____________________" << std::endl;
 
