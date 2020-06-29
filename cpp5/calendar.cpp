@@ -17,6 +17,9 @@ int main() {
 	x2 = (year - 1) / 100;
 	x3 = (year - 1) / 400;
 	firstdaymonth = ((year + x1 - x2 + x3) % 7) - 1; // this is some unknown black magic
+	if(firstdaymonth == -1) {
+		firstdaymonth = 6;
+	}
 
 	// Check if the year is a leap year
 	bool leap;
